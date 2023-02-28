@@ -11,8 +11,8 @@ html {
 }
 
 body {
-    font-family: Inter, Arial, Hevetica, sans-serif;
     color: var(--color-body);
+    font-family: Inter, Arial, Hevetica, sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
 }
@@ -62,9 +62,9 @@ a {
 }
 .link-arrow {
     color: var(--color-accent);
-    text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .link-arrow::after {
@@ -118,9 +118,9 @@ a {
 
 /* Lists */
 .list {
+    color: var(--color-heading);
     list-style: none;
     padding-left: 0 ;
-    color: var(--color-heading);
 }
 
 .list--inline .list__item{
@@ -134,12 +134,32 @@ a {
 }
 
 .list--tick .list__item {
-    padding-left: 0.5rem;
     margin-bottom: 1rem;
+    padding-left: 0.5rem;
 }
 
 @media screen and (min-width:1024px) {
     .list--tick .list__item {
         padding-left: 0;
     }
+}
+
+/* Icons */
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
+.icon--primary {
+    fill: var(--color-primary);
+}
+
+.icon-container {
+    align-items: center;
+    background: #f3f9fa;
+    border-radius: 100%;
+    display: inline-flex;
+    height: 64px;
+    justify-content: center;
+    width: 64px;
 }
