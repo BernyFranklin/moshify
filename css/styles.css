@@ -12,6 +12,7 @@
 *, *::after, *::before {
     box-sizing: border-box;
 }
+
 /* Typography */
 html {
     font-size: 62.5%
